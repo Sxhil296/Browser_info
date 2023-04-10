@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Browser Details</title>
+</head>
+<body>
+    <h1>Browser information</h1>
+    <div id="example"></div>
+    <script>
+        txt = "<p> Browser Name: "+ navigator.appCodeName+ "</p>" 
+        txt+= "<p> App Name: "+ navigator.appName+ "</p>"
+        txt+= "<p> Browser Version: "+ navigator.appVersion+ "</p>"
+        txt+= "<p> Browser Cookies: "+ navigator.cookieEnabled+ "</p>"
+        txt+= "<p> Browser Product: "+ navigator.product+ "</p>"
+
+
+        document.getElementById('example').innerHTML = txt 
+    </script>
+</body>
+</html>
